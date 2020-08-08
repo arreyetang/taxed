@@ -1,0 +1,274 @@
+@font-face{
+    src: url(fonts/Merriweather-Black);
+    font-family: mer;
+    }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+html, body {
+    display: grid;
+    background-image: linear-gradient( rgba(84, 5, 158, 0.671),rgba(12, 12, 156, 0.658), rgba(0, 0, 0, 0.479));
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    }
+
+.container{
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+.main {
+    padding-bottom:6.25rem;
+    height: auto;  
+    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 1rem;
+    background-color: #ffdcb4;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+    color: #8669ac;
+    font-weight: 800;
+    background-image: linear-gradient( rgba(84, 5, 158, 0.671),rgba(12, 12, 156, 0.658), rgba(0, 0, 0, 0.479));
+    }
+    header img {
+        width: 2em;
+        height: 2em;
+        }
+
+
+    li, a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #45118a;
+        text-decoration: none;  
+        }
+
+    /* drop down menu on forms */
+    .dropbtn {
+        font-weight: 600;
+        color: #45118a;
+        padding: 1rem;
+        border: none;
+        background-color: #ffdcb4;
+        }
+  
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #c296cf;
+            min-width: 250px;
+            box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+            z-index: 1;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s  ease 0s;
+            }
+        
+            .dropdown-content a {
+                color: black;
+                padding: 0.5625rem 1.5625rem;
+                text-decoration: none;
+                display: block;
+                }
+    
+                .dropdown-content a:hover {background-color: rgb(255, 255, 255);}
+    
+                    .dropdown:hover .dropdown-content {display: block;}
+
+    .logo {
+        cursor: pointer;
+        height: 5em;
+        width: 15%;
+        }
+
+    .nav__links li{
+        display: inline-block;
+        padding: 0px 40px;
+        font-size: 13px;
+        }
+        .nav__links li a {
+            transition: all 0.3s ease 0s;
+            }
+            .nav__links li a:hover {
+                color: #105c6e;
+                }
+
+.home-hero{
+    background-color: #130b0b;
+    border: none;
+    top: 10%;
+    border-radius:2.02rem;
+    text-align: center;
+    transform: translate(10%);
+    font-size: 1rem;    
+    color: #ffffff;
+    transition: all 0.3s  ease 0s;
+        position: relative;
+        box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+    }
+        
+    .home-hero a{
+        background-color: #ad386f;
+        border: none;
+        }
+        .home-hero span {
+            font-size: 1rem;
+            }
+        
+button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #ad386f;
+    width: 110px;
+    border: none;
+    border-radius: 45px;
+    padding: 19px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s  ease 0s; 
+}
+
+    button:hover{
+        background-color: #fff;
+        color:  rgba(77, 18, 131, 0.877);
+        font-weight: 550;  
+    }
+
+.button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #ad386f;
+    width: 110px;
+    border: none;
+    border-radius: 45px;
+    padding: 19px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s  ease 0s; 
+}
+
+#reset {
+    background-color: rgb(13, 126, 47);
+}
+
+.login-page {
+    width: 20em;
+    padding:10% 0 0;
+     height: 400px;
+    color: #fff;
+    margin: auto;
+    transform: translate(10% -50%);
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+    .form {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(7, 40, 195, 0.8);
+        max-width: 25em;
+        height: max-content;
+        margin: 0 auto 80em;
+        padding: 2.5em;
+        text-align: center;
+        box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .avatar {
+            width: 10rem;
+            height: 3rem;
+            border-radius: 5%;
+            position: sticky;
+            top: -90%;
+            left: calc(50% - 50px);
+        }
+        
+        .form input, select {
+                outline: 1;
+                background: #f2f2f2;
+                width: 100%;
+                border: 0em;
+                border-radius: 10px;
+                margin: 0 0 0.8rem;
+                box-sizing: border-box;
+                align-items: flex-start;
+                font-size: 0.8rem;
+                padding: 1rem;
+            }
+
+
+        .form message {
+            margin: 15px 0 0;
+            color: rgb(240, 240, 240);
+        }
+        .form .message a{
+            margin: 15px 0 0;
+            color:#4CAf50;
+            text-decoration: none;
+        }
+        
+        .form .register-form {
+            display:none;
+        }
+
+        .form img {
+            animation-name: blink;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+        .login-form .message a {
+            position: absolute;
+            color: #4caf50;
+            text-decoration: underline;
+            cursor: pointer;   
+        }
+
+#personal #educational #professional{
+    width: 33.33%;
+}
+
+.footer {
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+    column-count: 3;
+    gap: 40px;
+    background-color: #bc658d;
+    clear: both;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    padding: 0.5rem 8%;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Taxao|Home</title>
+            <link rel="icon" href="assets/dgilogo.png" type="images/x-icon">
+            <link rel="stylesheet" href="styles.rentalinc.css">   
+        </head>
+
+        <body>
+            <main class="main">
+                <header class="topbar" id="topbar">
+                    <marquee class="title" width=100%><strong> Welcome To TaXao. First Cameroonian Online Calculator. FREE!!! </strong></marquee>
+                        <ul class="navbar">
+                            <!--Icons made by a href=httpswww.flaticon.comauthorsflat-icons title=Flat IconsFlat Iconsa from a href=https://www.flaticon.com title=Flaticon www.flaticon.com-->
+                            <img class="logo" href="index.html" src="assets/taxao_.png" alt="logo">
+                            <li><a href="index.html"><img src="icons/home.png">Home</a></li>
+                            <li><a href="gallery.html" target="_blank"><button class="button" id="btn1"><img  src="icons/link.png">Contact</button></a></li>
+                            <li class="dropdown"><a><button class="dropbtn"><img src="icons/archive.png">Forms</button></a>
+                                <div class="dropdown-content">
+                                    <a href="landing.html" target="_blank"><img src="icons/multimedia.png"><strong>Land Tax</strong></a><hr>
+                                    <a href="rentinc.html" target="_blank"><img src="icons/check.png"><strong>Rental Income Tax</strong></a>
+                                </div>
+                            </li>
+                            <li class="dropdown"><a><button class="dropbtn"><img src="icons/Community.png">Community</button></a>
+                                <div class="dropdown-content">
+                                    <a href="subscription.html" target="_blank"><img src="icons/interfaces.png">Try For Free</a>
+                                    <a href="materialize/parallax-template/landing.html" target="_blank"><img src="icons/screen.png">About US</a>
+                                </div>
+                            </li>
+                        </ul>
+                </header>
+
+                <content class="content">
+                        <form class="form1A" id="form1A">
+                            <h1>Form 1A: LAND</h1>
+                            <div id="council" class="council">
+                                <select name="council" id="council" class="council">
+                                    <option><strong>Where Do You Live?</strong></option>
+                                    <option>KUMBA I</option><br>
+                                    <option>KUMBA II</option><br>
+                                    <option>KUMBA III</option><br>
+                                </select>
+                            </div>
+                            <input name="locality" id="locality" class="locality">
+                                <datalist id="streets">
+                                <option>Up Station</option><br>
+                                <option>Kumba Town</option><br>
+                                <option>Fiango</option><br>
+                                <option>Kosala I</option><br>
+                                <option>Kosala II</option><br>
+                                <option>Kosala III</option><br>
+                                <option>Krama</option><br>
+                                <option>Ngamalikum</option><br>
+                                <option>RTC</option><br>
+                                <option>Nchako Street</option><br>
+                                <option>Soba Park</option><br>
+                                <option>Bonakama</option><br>
+                                <option>Barombi Native</option><br>
+                                <option>Barombi Kang</option><br>
+                                <option>Ibo Quarters</option><br>
+                                <option>Mbongue Road</option><br>
+                                <option>Mile I</option><br>
+
+                            <div id="work.detail" class="work.detail">
+                                <select name="work.detail" id="work.detail" class="work.detail">
+                                    <option><strong>What's your work situation like?</strong></option>
+                                    <option>Employed</option>
+                                    <option>Self-Employed</option>
+                                    <option>Investor</option>
+                                    <option>Business Owner</option>
+                                    <option>Retired</option>
+                                </select>
+                            </div>
+                            <div id="owner" class="owner">
+                                <select name="owner" id="owner" class="owner">
+                                    <option><strong>Land Situation</strong></option>
+                                    <option>Landlord</option>
+                                    <option>Tenant</option>
+                                </select>
+                            <div id="landmark" class="landmark">
+                                <select name="" id="" class="">
+                                    <option><strong>Land Situation</strong></option>
+                                    <option>Unconstructed</option>
+                                    <option>Constructed</option>
+                                </select>
+                                <div id="submit" class="submit">
+                                    <button type="submit" method="GET">Submit</button>
+                                </div>
+                            </div>
+                        
+
+                    <!-- <form id="formB">
+                            <div id="landmark" class="landmark">
+                                <input placeholder="How much did you buy your land?"></input>
+                            </div>
+
+    
+                            <div id="submit" class="submit">
+                            <button type="submit" method="GET">Submit</button>
+                            </div>
+                        </form> -->
+                        </form>
+
+                        <div class="box" id="box">
+                            <calco class="calco">
+                                <!--https://webdevtrick.com/basic-javascript-calculator-source-code/-->
+                            <calculator class="calculator" id="calculator">
+                                <script>
+                                    function calcNumbers(result){
+                                        form.displayResult.value=form.displayResult.value+result;
+                                            
+                                        }
+                                    </script>
+                                <form name="form">
+                                        <div id="display">
+                                            <input type="text" placeholder="0" name="displayResult" />
+                                        </div>
+                                        <div id="buttons">
+                                            <div class="row">
+                                                <input type="button" name="b7" value="7" onClick="calcNumbers(b7.value)">
+                                                <input type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
+                                                <input type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
+                                                <input type="button" name="addb" value="+" onClick="calcNumbers(addb.value)">
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <input type="button" name="b4" value="4" onClick="calcNumbers(b4.value)">
+                                                <input type="button" name="b5" value="5" onClick="calcNumbers(b5.value)">
+                                                <input type="button" name="b6" value="6" onClick="calcNumbers(b6.value)">
+                                                <input type="button" name="subb" value="-" onClick="calcNumbers(subb.value)">
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <input type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
+                                                <input type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
+                                                <input type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
+                                                <input type="button" name="mulb" value="*" onClick="calcNumbers(mulb.value)">
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <input type="button" name="b0" value="0" onClick="calcNumbers(b0.value)">
+                                                <input type="button" name="potb" value="." onClick="calcNumbers(potb.value)">
+                                                <input type="button" name="divb" value="/" onClick="calcNumbers(divb.value)">
+                                                <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+                                            </div>
+                                            <div class="row">
+                                                <button id="reset" type="reset" onclick="reset()">c</button>
+                                            </div>
+                                        </div>
+                                </form>
+                            </calculator>
+                            </calco>
+                            <ads class="ads"><strong>BUY THIS SPACE TO ADVERTISE WITH US</strong></ads>
+                        </div>
+                </content>
+
+                    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                    <script>
+                        $('.message a').click(function(){
+                            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+                                });
+                    </script>
+            </main>
+            <footer class="footer" id="footer" >
+                            
+                <p><h2>Social Links & Community</h2></p>
+                <div id="personal">
+                    <ul class="unstyled-list" style="list-style-type:none;">
+                        <li><a href=""><strong>Twitter</strong></a></li>
+                        <li><a href="https://www.facebook.com/arreyginal">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/arreyginal">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/arreyetang">Linked</a></li>
+                        <li><a href="https://www.youtube.com/c/arreyginal">YouTube</a></li>
+                    </ul>
+                </div>
+    
+                <div id="educational">
+                    <ul class="unstyled-list">
+                        <li><a href=""><strong>Academia</strong></a></li>
+                        <li><a href="htttc.com">HTTTC</a></li>
+                        <li><a href="ubuea.cm">UB</a></li>
+                        <li><a href="https://www.github.com/arreyetang">GitHub</a></li>
+                    </ul>
+                </div>
+    
+                <div id="professional">
+                    <ul class="unstyled-list">
+                        <li><a href="https:dev.to/arreyetang_59 "><strong>Developer Square</strong></a></li>
+                        <li><a href="https://www.impots.cm/">IMPOTS</a></li>
+                        <li><a href="https://www.crtv.cm/">CRTV</a></li>
+                        <li><a href="https://www.mincom.cm/">TELECOM</a></li>
+                    </ul>
+                </div>
+            </footer>
+        
+        </body>
+    </html>

@@ -1,0 +1,328 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	/*box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);*/
+}
+
+main{
+	height:80vh;
+	color: #fff;
+	display: grid;
+	grid-template-columns: 3fr 30%;
+	grid-auto-rows: repeat(4, minmax(150px, auto));
+	gap:1em 2em;
+	grid-area: main;
+	grid-template-areas:"header header"
+						"content content"
+						"footer footer";
+}
+
+header{
+	grid-area: header;
+	gap: 1em;
+	border: 0em;
+	background-image: linear-gradient(rgb(12, 12, 156), rgb(118, 31, 199));
+	box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+}
+	.title{
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: black;
+		font-style: italic;
+	}
+	.navbar {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		gap:0.5rem 1rem;
+		padding: 1em;
+		border-radius: 4px;
+		background-color: #ffffff;
+		color: #45118a;
+		font-size: large;
+		font-weight: 700;
+		text-transform: uppercase;
+		box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+	}
+
+.content {
+		display: grid;
+		grid-template-columns: 3fr 40%;
+		margin: 2em;
+		border-radius: 5px;
+		gap: 1rem 2rem;
+		grid-area: content;
+		gap: 30px;
+		padding: 0.5em;
+		border: 0em;
+		background-image: linear-gradient(rgb(12, 12, 156), rgb(118, 31, 199));
+		box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+		grid-template-areas:"form1A box"
+							"form1A box";
+}
+ .content .box {
+	border: rgb(255, 255, 255) 1px solid;
+	border-width: 1em;
+	grid-column-start: 2;
+	grid-row: 4;
+	grid-area: content;
+ }
+
+	
+.box{
+		display: grid;
+		color: #fff;
+		grid-template-columns:1fr;
+		grid-area: content;
+		grid-row: 1;
+		padding: 1em;
+		border: 0em;
+		gap:1rem 2rem;
+		background-image: linear-gradient(rgb(35, 35, 128), rgb(0, 0, 0));
+		box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+		grid-template-areas:"ads"
+							"calco";	
+	}
+	.calco{
+		display: grid;
+		grid-row: 2;
+	}
+	.ads{
+		
+		display: grid;
+		
+		background-color: #fff;
+		color: #45118a;
+		justify-content: center;
+		align-items: center;
+	}
+
+.footer{
+	height: 20vh;
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		gap:0.5rem 1rem;
+		padding: 1em;
+		border-radius: 4px;
+		background-color: #ffffff;
+		color: #45118a;
+		font-size: large;
+		font-weight: 700;
+		text-transform: uppercase;
+		box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.475rem 1.04rem 0 rgba(0, 0, 0, 0.2);
+}
+
+	/*header unorderedlist grid items*/
+li{
+	display: flex;
+	flex-flow: column;
+	}
+img {
+	display: block;
+	order: -1;
+	width: 2em;
+	height: 2em;
+}
+
+.content h1 {
+	color: #0d2a81;
+	align-items: center;
+}
+
+li, a {
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #45118a;
+	text-decoration: none;  
+}
+	 li a:hover {color: rgb(255, 255, 255);}
+	 li a button:hover {color: rgb(255, 255, 255);}
+
+	.logo{
+		cursor: pointer;
+		width: 80%;
+		height: 4em;
+		justify-self: center;
+		transform: translate(15%, 15%);
+
+		animation-name: blink;
+		animation-duration: 5s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+		@keyframes blink {
+					0% {
+						opacity: 1;
+					}
+					50% {
+						opacity: 0;
+					}
+					100% {
+						opacity: 1;
+					}
+		}
+
+	.dropbtn {
+			font-size: large;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #45118a;
+			border: none;
+			background-color: #ffdcb400;
+	}
+						  
+	.dropdown {display: flex;}
+							
+	.dropdown-content {
+						position: static;
+						display: none;
+						background:linear-gradient(rgb(17, 121, 165), rgb(65, 15, 126));
+						min-width: 250px;
+						z-index: 1;
+						border: none;
+						border-radius: 0.5rem;
+						cursor: pointer;
+						transition: all 0.3s  ease 0s;
+	}
+								
+	.dropdown-content a {
+						color: black;
+						padding: 0.5625rem 1.5625rem;
+						text-decoration: none;
+						display: block;
+	}
+							
+	.dropdown-content a:hover {color: rgb(255, 255, 255);}
+							
+	.dropdown:hover .dropdown-content {display: block;}					
+
+.form input, select {
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0em;
+    border-radius: 10px;
+    margin: 0 0 0.8rem;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding: 1rem;
+    font-weight: 800;
+}
+
+	button {
+		font-size: large;
+		font-weight: 600;
+		text-transform: uppercase;
+		outline: 1;
+		background: #36a592;
+		width: 170px;
+		border: none;
+		border-radius: 45px;
+		padding: 15px;
+		color: #ffffff;
+		cursor: pointer;
+		transition: all 0.3s  ease 0s; 
+	}
+	
+button:hover{
+			color:  rgba(77, 18, 131, 0.877); 
+	}
+
+#btn1{
+	background: #ffffff;
+	color:  #45118a;
+}
+
+#reset{
+	width: 60px;
+	height: 60px;
+	float: left;
+	padding: 0;
+	margin: 5px;
+	box-sizing: border-box;
+	background: #ecedef;
+	border: none;
+	font-size: 2em;
+	line-height: 30px;
+	border-radius: 50%;
+	color: #5E5858;
+	cursor: pointer;
+}
+
+#display {
+	width: 100%;
+	height: 70px;
+	padding: 40px 0;
+	background:linear-gradient(rgb(17, 121, 165), rgb(65, 15, 126));
+	border-top-left-radius: 0.825rem;
+	border-top-right-radius: 0.825rem;
+}
+
+#buttons {
+	padding: 20px 20px 0 20px;
+}
+
+row {
+	width: 280px;
+	float: left;
+}
+
+input[type=button] {
+	width: 60px;
+	height: 60px;
+	float: left;
+	padding: 0;
+	margin: 5px;
+	box-sizing: border-box;
+	background: #ecedef;
+	border: none;
+	font-size: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	font-weight: 700;
+	color: #5E5858;
+	cursor: pointer;	
+}
+
+input[type=text] {
+	width: 270px;
+	height: 60px;
+	float: left;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	background: none;
+	color: #ffffff;
+	text-align: right;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 60px;
+	margin: 0 25px;	
+}
+
+.red {
+	background: rgb(8, 27, 139) !important;
+	color: #ffffff !important;
+}
+
+/* #formB {
+	display: none;
+} */
+
+/*@media screen and (min-width: 736px){
+
+	
+	/* desktop version
+		display: grid;
+			grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+			gap:0.5rem 2rem;
+		
+}*/
+
+
+/*header, footer, content{
+	max-width:960px;
+}*/
